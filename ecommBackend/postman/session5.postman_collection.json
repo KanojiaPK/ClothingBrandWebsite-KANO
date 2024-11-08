@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "4f5e2ce7-8ad5-4da4-a86d-d34297d4fded",
+		"name": "session6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33893164"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/v1/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Soni\",\r\n    \"email\":\"sonya@gmail.com\",\r\n    \"password\":\"abc123\",\r\n    \"contact\":9876543210\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9006/get-user/_id:6611719e0f5749f708767658/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9006",
+							"path": [
+								"get-user",
+								"_id:6611719e0f5749f708767658",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8001/api/v1/user/get-user/660d122bf65937f8ce0a6891",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"get-user",
+								"660d122bf65937f8ce0a6891"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "add category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Shoes\",\r\n    \"description\":\"This is shoes category\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{nodeport}}/categories/add-category",
+							"host": [
+								"{{nodeport}}"
+							],
+							"path": [
+								"categories",
+								"add-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{nodeport}}/categories/get-categories",
+							"host": [
+								"{{nodeport}}"
+							],
+							"path": [
+								"categories",
+								"get-categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "add product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"iPhone 15\",\r\n    \"category\":\"66139f04192f5c6839bee209\",\r\n    \"description\":\"this is sdfj lksjf sljfs fsfj sfjdsf dslfjdslfj sojfsdf lndsf\",\r\n    \"short_description\":\"this is iPhone\",\r\n    \"price\":65432,\r\n    \"quantity\":100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{nodeport}}/products/add-product",
+							"host": [
+								"{{nodeport}}"
+							],
+							"path": [
+								"products",
+								"add-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get products",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

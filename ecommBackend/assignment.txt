@@ -1,0 +1,9 @@
+Create category crud 
+
+fields:
+
+name,
+description,
+image,
+status,
+created_at
