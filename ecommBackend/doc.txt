@@ -1,0 +1,22 @@
+implement babel in project
+
+1. install 
+cmd:>npm i --save-dev @babel/node @babel/cli @babel/core @babel/preset-env 
+
+2.add babel in  package.json
+
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+
+3. update script 
+
+  "scripts": {
+    "server": "nodemon --exec babel-node index.js"
+  },
+
+
+
+Now, you can use es6 features
