@@ -5,7 +5,7 @@ import categoryRouter from "./routers/category.router";
 import productRouter from "./routers/product.router";
 import cartRouter from "./routers/cart.router";
 const app = express();
-const PORT = 8002;
+const PORT = process.env.PORT || 8002;
 
 // body parser
 app.use(express.json());
