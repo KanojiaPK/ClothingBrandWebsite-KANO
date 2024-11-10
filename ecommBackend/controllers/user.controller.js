@@ -2,7 +2,7 @@ import UserModel from "../models/user.model.js";
 import multer from "multer";
 import path from "path";
 import fs from "fs";
-import bcrypt from "bcrypt";
+import bcrypt from "bcrypjs";
 import jwt from "jsonwebtoken";
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
