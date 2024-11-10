@@ -111,7 +111,8 @@ export const deleteCategory = async (req, res) => {
       return res.status(200).json({
         message: "Deleted!",
         success: true,
-      });a
+      });
+      a;
     }
     return res.status(400).json({
       message: "Bad request",
