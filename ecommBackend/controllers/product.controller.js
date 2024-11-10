@@ -1,4 +1,4 @@
-import productModel from "../models/product.model";
+import productModel from "../models/product.model.js";
 import multer from "multer";
 import fs from "fs";
 import path from "path";

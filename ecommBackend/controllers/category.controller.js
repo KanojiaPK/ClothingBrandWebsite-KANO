@@ -1,4 +1,4 @@
-import CategoryModel from "../models/category.model";
+import CategoryModel from "../models/category.model.js";
 export const addCategory = async (req, res) => {
   try {
     const { categoryname, categorytype, description } = req.body; // Corrected keys

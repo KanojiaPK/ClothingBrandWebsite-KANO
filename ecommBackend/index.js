@@ -1,9 +1,9 @@
 import express from "express";
 import mongoose from "mongoose";
-import userRouter from "./routers/user.router";
-import categoryRouter from "./routers/category.router";
-import productRouter from "./routers/product.router";
-import cartRouter from "./routers/cart.router";
+import userRouter from "./routers/user.router.js";
+import categoryRouter from "./routers/category.router.js";
+import productRouter from "./routers/product.router.js";
+import cartRouter from "./routers/cart.router.js";
 const app = express();
 const PORT = process.env.PORT || 8002;
 
